@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дарья Солдатова](https://up.htmlacademy.ru/adaptive/18/user/1873).
-* Наставник: `Неизвестно`.
+* Наставник: `Дмитрий Беллавин`.
 
 ---
 

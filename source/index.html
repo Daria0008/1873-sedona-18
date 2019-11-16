@@ -2,40 +2,40 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
-        <ul class="main-nav__list site-menu">
-          <li class="site-menu__item">
-            <a href="index.html">Главная</a>
-            <img class="site-menu__closebutton" src="./img" width="23" height="22" alt="Кнопка закрыть">
+      <nav class="page-header__nav main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+            <img class="main-nav__closebutton" src="./img" width="23" height="22" alt="Кнопка закрыть">
           </li>
-          <li class="site-menu__item">
-            <a href="foto.html">Фото и видео</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="foto.html">Фото и видео</a>
           </li>
-          <li class="site-menu__item">
-            <a href="form.html">Форма отзыва</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Форма отзыва</a>
           </li>
-          <li class="site-menu__item">
-            <a href="https://htmlacademy.ru">Html Academy</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru">Html Academy</a>
           </li>
-        </ul>
-        <ul class="main-nav__list user-menu">
-          <li>
-            <img class="user-menu__logo" src="./img" width="102" height="83" alt="Герб Седоны">
-            <button class="user-menu__button"></button>
+          <li class="main-nav__item--logo">
+            <img class="main-nav__logo" src="./img" width="102" height="83" alt="Герб Седоны">
+            <button class="main-nav__menubutton"></button>
           </li>
         </ul>
       </nav>
-      <div class="biglogo">
-        <img class="biglogo__text" src="./img" width="281" height="214" alt="Welcome to the gorgeous SEDONA">
-        <img class="smalllogo__bottom" src="./img" width="320" height="26" alt="Декоративный элемент">
-      </div>
     </header>
     <main class="presentation">
       <h1 class="presentation__header visually-hidden">Немного о Седоне</h1>
+        <div class="biglogo">
+          <img class="biglogo__text" src="./img" width="281" height="214" alt="Welcome to the gorgeous SEDONA">
+          <img class="smalllogo__bottom" src="./img" width="320" height="26" alt="Декоративный элемент">
+      </div>
       <section class="presentation__about about">
         <h2 class="about__header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="about__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>

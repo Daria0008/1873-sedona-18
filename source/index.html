@@ -2,11 +2,115 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
   </head>
-  <body>
+  <body class="mainbody">
+    <header class="page-header">
+      <nav class="page-header__nav">
+        <ul class="page-header__list">
+          <li class="page-header__item page-header__item--blue">
+            <a class="page-header__link" href="index.html">Главная</a>
+            <img class="page-header__closebutton" src="./img" width="23" height="22" alt="Кнопка закрыть">
+          </li>
+          <li class="page-header__item page-header__item--blue">
+            <a class="page-header__link" href="photo.html">Фото и видео</a>
+          </li>
+          <li class="page-header__item page-header__item--blue">
+            <a class="page-header__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="page-header__item page-header__item--blue">
+            <a class="page-header__link" href="https://htmlacademy.ru">Html Academy</a>
+          </li>
+          <li class="page-header__item page-header__item--logo">
+            <img class="page-header__logo" src="./img" width="102" height="83" alt="Герб Седоны">
+            <button class="page-header__menubutton"></button>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <main class="promo">
+      <h1 class="promo__mainheader visually-hidden">Немного о Седоне</h1>
+      <div class="promo__logoarea">
+        <img class="promo__logo" src="./img" width="281" height="214" alt="Welcome to the gorgeous SEDONA">
+        <img class="promo__triangle" src="./img" width="320" height="26" alt="Декоративный элемент">
+      </div>
+      <section class="promo__description">
+        <h2 class="promo__header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="promo__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <img class="promo__bottom" src="./img" width="320" height="37" alt="Декоративный элемент">
+      </section>
+      <ul class="promo__list">
+        <li class="promo__item promo__item--blue">
+          <h3 class="promo__itemheader">Настоящий городок</h3>
+          <p class="promo__text">— №1 —</p>
+          <p class="promo__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <img class="promo__image--house" src="./img" width="520" height="260" alt="Домик шерифа">
+        </li>
+        <li class="promo__item promo__item--blue">
+          <h3 class="promo__itemheader">Там есть мост дьявола</h3>
+          <p class="promo__text">— №2 —</p>
+          <p class="promo__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <img class="promo__image--bridge" src="./img" width="520" height="260" alt="Мост дьявола">
+        </li>
+        <li class="promo__item">
+          <h3 class="promo__itemheader">Небольшая площадь</h3>
+          <p class="promo__text">— №3 —</p>
+          <p class="promo__text">Все интересные места находятся очень близко</p>
+        </li>
+        <li class="promo__item">
+          <h3 class="promo__itemheader">Красивая дорога</h3>
+          <p class="promo__text">— №4 —</p>
+          <p class="promo__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </li>
+        <li class="promo__item">
+          <h3 class="promo__itemheader">Мало туристов</h3>
+          <p class="promo__text">— №5 —</p>
+          <p class="promo__text">Большинство едет в Гранд-Каньон и толпится там</p>
+        </li>
+      </ul>
+      <ul class="promo__list">
+        <li class="promo__item">
+          <h3 class="promo__itemheader">Жилье</h3>
+          <p class="promo__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </li>
+        <li class="promo__item">
+          <h3 class="promo__itemheader">Сувениры</h3>
+          <p class="promo__text">Не только китайского, но и местного производства!</p>
+        </li>
+        <li class="promo__item">
+          <h3 class="promo__itemheader">Еда</h3>
+          <p class="promo__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </li>
+      </ul>
+      <div class="promo__offer">
+        <h2 class="promo__header--offer">Заинтересовались?</h2>
+        <p class="promo__text">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+        <a class="promo__link--offer">Найти гостиницу</a>
+      </div>
+      <div class="promo__map"></div>
+
+    </main>
+    <footer class="page-footer">
+      <h2 class="page-footer__tag">#VisitSedona</h2>
+      <ul class="page-footer__list">
+        <li class="page-footer__item">
+          <a href="#" class="page-footer__link--twiter" area-label="Седона в Твиттере"></a>
+        </li>
+       <li class="page-footer__item">
+          <a href="#" class="page-footer__link--facebook" area-label="Седона в Фейсбуке"></a>
+        </li>
+        <li class="page-footer__item">
+          <a href="#" class="page-footer__link--youtube" area-label="Седона на Ютюбе"></a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright">
+        <p class="page-footer__text">Разработано</p>
+        <img class="page-footer__logo" src="./img" width="27" height="34" alt="Логотип HTML Academy">
+      </div>
+    </footer>
 
   </body>
 </html>

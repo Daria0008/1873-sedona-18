@@ -1,8 +1,21 @@
 .page-header__item{
 
-&--blue{
-    color: @white;
-    background-color: @blue;
+  .blue();
+
 }
+
+@media (min-width: @tablet-width) {
+
+  .page-header__item--logo{
+    order: 3;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+
+  .page-header__item--logo{
+    order: 3;
+  }
 
 }

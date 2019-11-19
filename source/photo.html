@@ -10,34 +10,36 @@
 
 <body class="mainbody">
   <header class="page-header">
-    <nav class="page-header__nav">
-      <ul class="page-header__list">
-        <li class="page-header__item">
-          <a class="page-header__link" href="index.html">Главная</a>
-          <img class="page-header__closebutton" src="./img" width="23" height="22" alt="Кнопка закрыть">
+    <nav class="page-header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="index.html">Главная</a>
+          <img class="nav__closebutton" src="./img" width="23" height="22" alt="Кнопка закрыть">
         </li>
-        <li class="page-header__item">
-          <a class="page-header__link" href="photo.html">Фото и видео</a>
+        <li class="nav__item">
+          <a class="nav__link" href="photo.html">Фото и видео</a>
         </li>
-        <li class="page-header__item">
-          <a class="page-header__link" href="form.html">Форма отзыва</a>
+        <li class="nav__item">
+          <a class="nav__link" href="form.html">Форма отзыва</a>
         </li>
-        <li class="page-header__item">
-          <a class="page-header__link" href="https://htmlacademy.ru">Html Academy</a>
+        <li class="nav__item">
+          <a class="nav__link" href="https://htmlacademy.ru">Html Academy</a>
         </li>
-        <li class="page-header__item page-header__item--logo">
-          <img class="page-header__logo" src="./img" width="102" height="83" alt="Герб Седоны">
-          <button class="page-header__menubutton"></button>
+        <li class="nav__item nav__item--logo">
+          <a class="nav__link" href="#">
+            <img class="nav__logo" src="./img" width="102" height="83" alt="Герб Седоны">
+            <button class="nav__menubutton"></button>
+          </a>
         </li>
       </ul>
     </nav>
+    <div class="logoarea">
+      <img class="logoarea__logo" src="./img" width="230" height="40" alt="SEDONA">
+      <img class="logoarea__bottom" src="./img" width="320" height="26" alt="Декоративный элемент">
+    </div>
   </header>
   <main class="photopage">
     <h1 class="photopage__mainheader visually-hidden">Виды Седоны</h1>
-    <div class="photopage__logoarea">
-      <img class="photopage__logo" src="./img" width="230" height="40" alt="SEDONA">
-      <img class="photopage__bottom" src="./img" width="320" height="26" alt="Декоративный элемент">
-    </div>
     <section class="photopage__description">
       <h2 class="photopage__header">Фото и видео</h2>
       <p class="photopage__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
@@ -93,22 +95,22 @@
       <p class="photopage__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
     </section>
   </main>
-   <footer class="page-footer">
-      <h2 class="page-footer__tag">#VisitSedona</h2>
-      <ul class="page-footer__list">
-        <li class="page-footer__item">
-          <a href="#" class="page-footer__link--twiter" area-label="Седона в Твиттере"></a>
+   <footer class="footer">
+      <h2 class="footer__tag">#VisitSedona</h2>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="footer__link--twiter" area-label="Седона в Твиттере"></a>
         </li>
-       <li class="page-footer__item">
-          <a href="#" class="page-footer__link--facebook" area-label="Седона в Фейсбуке"></a>
+       <li class="footer__item">
+          <a href="#" class="footer__link--facebook" area-label="Седона в Фейсбуке"></a>
         </li>
-        <li class="page-footer__item">
-          <a href="#" class="page-footer__link--youtube" area-label="Седона на Ютюбе"></a>
+        <li class="footer__item">
+          <a href="#" class="footer__link--youtube" area-label="Седона на Ютюбе"></a>
         </li>
       </ul>
-      <div class="page-footer__copyright">
-        <p class="page-footer__text">Разработано</p>
-        <img class="page-footer__logo" src="./img" width="27" height="34" alt="Логотип HTML Academy">
+      <div class="footer__copyright">
+        <p class="footer__text">Разработано</p>
+        <img class="footer__logo" src="./img" width="27" height="34" alt="Логотип HTML Academy">
       </div>
     </footer>
 </body>

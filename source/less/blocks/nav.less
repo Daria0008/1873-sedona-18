@@ -36,7 +36,7 @@
   display: flex;
   align-items: center;
   background-color: @blue;
-  box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2);
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
   }
 
 .nav__item--logo {
@@ -59,7 +59,7 @@
 @media (min-width: @tablet-width) {
 
   .nav__list{
-    min-width: @tablet-width;
+    min-width: 768px;
     width: 100%;
     min-height: 56px;
     display: flex;
@@ -94,9 +94,12 @@
 @media (min-width: @desktop-width) {
 
   .nav__list{
+    min-width: 1200px;
+    width: 100%;
     color: @black;
     background-color: @white;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     min-height: 56px;

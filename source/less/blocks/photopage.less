@@ -11,11 +11,21 @@
   list-style: none;
 }
 
+.photopage__itemheader{
+  font-family: "PTSans-Bold";
+  font-size: 14px;
+  color: @deepblack;
+}
+
+.photopage__author{
+  font-size: 14px;
+  text-transform: none;
+}
+
 @media (min-width: @mobile-width) {
 
   .photopage{
     min-height: 1656px;
-    background: blue;
   }
 
   .photopage__list{
@@ -26,7 +36,6 @@
     min-width: 320px;
     width: 100%;
     padding: 20px;
-    background: red;
   }
 
   .photopage__item{
@@ -34,6 +43,10 @@
     min-height: 414px;
     min-width: 320px;
     width: 100%;
+  }
+
+  .photopage__itemheader{
+
   }
 
 }

@@ -1,8 +1,6 @@
 
 .photopage{
   display: block;
-  margin: 0;
-  padding: 0;
   min-width: 320px;
   width: 100%;
 }
@@ -30,16 +28,16 @@
 @media (min-width: @mobile-width) {
 
   .photopage{
-    min-height: 1656px;
     min-width: 320px;
     width: 100%;
   }
 
   .photopage__list{
     padding: 0;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     min-width: 320px;
     width: 100%;
@@ -56,9 +54,35 @@
 @media (min-width: @tablet-width) {
 
   .photopage__list{
-    height: 1174px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .photopage__item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 347px;
+    width: 324px;
+    background-color: yellow;
+  }
+
+  .photopage__item:first-child{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 480px;
+    width: 648px;
+    background-color: red;
+  }
+
+  .photopage__itemname, .photopage__like{
+    display: block;
+    width: 162px;
+    height: 80px;
+    background-color: @grey2;
   }
 
   .photopage__video {

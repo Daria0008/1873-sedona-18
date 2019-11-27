@@ -6,6 +6,8 @@
 }
 
 .photopage__list{
+  padding: 0;
+  margin: 0 auto;
   list-style: none;
   min-width: 320px;
   width: 100%;
@@ -33,8 +35,6 @@
   }
 
   .photopage__list{
-    padding: 0;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -57,29 +57,34 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .photopage__item{
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justufy-content: flex-end;
+    align-items: center;
     height: 347px;
     width: 324px;
     background-color: yellow;
   }
 
   .photopage__item:first-child{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin-left: 60px;
     height: 480px;
     width: 648px;
     background-color: red;
   }
 
+  .photopage__item:nth-child(2n){
+    margin-left: 60px;
+  }
+
   .photopage__itemname, .photopage__like{
-    display: block;
+    display: flex;
     width: 162px;
     height: 80px;
     background-color: @grey2;

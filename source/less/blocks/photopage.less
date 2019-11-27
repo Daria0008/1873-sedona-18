@@ -53,6 +53,14 @@
 
 @media (min-width: @tablet-width) {
 
+  .photopage{
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+    max-width: 768px;
+    min-height: 1174px;
+  }
+
   .photopage__list{
     display: flex;
     flex-direction: row;
@@ -64,19 +72,16 @@
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
-    justufy-content: flex-end;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-end;
     height: 347px;
     width: 324px;
-    background-color: yellow;
   }
 
   .photopage__item:first-child{
     margin-left: 60px;
     height: 480px;
     width: 648px;
-    background-color: red;
   }
 
   .photopage__item:nth-child(2n){
@@ -85,9 +90,24 @@
 
   .photopage__itemname, .photopage__like{
     display: flex;
+    flex-grow: 2;
     width: 162px;
     height: 80px;
     background-color: @grey2;
+  }
+
+  .photopage__itemname:first-child, .photopage__like:first-child{
+    width: 324px;
+  }
+
+  .photopage__itemname{
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .photopage__like{
+    flex-direction: row;
+    justufy-content: flex-end;
   }
 
   .photopage__video {
@@ -98,11 +118,67 @@
 
 @media (min-width: @desktop-width) {
 
+  .photopage{
+    display: block;
+    max-width: 1200px;
+    min-height: 667px;
+    padding: 0;
+    margin: 0 auto;
+  }
 
   .photopage__list{
-    height: 667px;
+    padding: 0;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .photopage__item{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 400px;
+    height: 267px;
+  }
+
+  .photopage__item:first-child{
+    margin: 0;
+    height: 400px;
+    width: 1200px;
+  }
+
+  .photopage__item:nth-child(2n){
+    margin: 0;
+  }
+
+  .photopage__itemname, .photopage__like{
+    margin: 0;
+    display: flex;
+    flex-grow: 2;
+    width: 200px;
+    height: 80px;
+    background-color: transparent;
+  }
+
+  .photopage__itemname:first-child, .photopage__like:first-child{
+    width: 600px;
+  }
+
+  .photopage__itemname{
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .photopage__like{
+    flex-direction: row;
+    justufy-content: flex-end;
+  }
+
+  .photopage__video {
+    height: 246px;
   }
 
   .photopage__video {

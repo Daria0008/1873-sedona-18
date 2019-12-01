@@ -1,0 +1,58 @@
+.logoarea{
+  display: block;
+  min-width: 320px;
+  width: 100%;
+  padding-bottom: 56.25%;
+  background-size: cover;
+  background-position: center;
+}
+
+
+@media (min-width: @mobile-width) {
+
+  .logoarea{
+    height: 389px;
+    background-image: url("/img/bg-back-mobile-1x.jpg");
+  }
+
+  .logoarea--big{
+     height: 389px;
+  }
+
+  @media (min-resolution: @retina-dppx) {
+    background-image: url("");
+  }
+
+}
+
+@media (min-width: @tablet-width) {
+
+  .logoarea{
+    height: 462px;
+    min-width: 768px;
+    width: 100%;
+    background-image: url("/img/bg-back-tablet@1x.jpg");
+  }
+
+  .logoarea--big{
+    height: 518px;
+  }
+
+
+}
+
+@media (min-width: @desktop-width) {
+
+  .logoarea{
+    height: 462px;
+    min-width: 1200px;
+    width: 100%;
+    background-image: url("/img/bg-back-desktop@1x.jpg");
+  }
+
+  .logoarea--big{
+    height: 518px;
+  }
+
+
+}

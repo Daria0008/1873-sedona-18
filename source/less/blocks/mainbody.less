@@ -1,4 +1,4 @@
-.mainbody{
+.mainbody, html{
   margin: 0;
   padding: 0;
   font-family: "PTSans";
@@ -8,8 +8,13 @@
   text-transform: uppercase;
   background-color: @white;
   min-width: 320px;
+  width: 100%;
+  overflow-x: hidden;
 }
 
+.mainbody > * {
+
+}
 
 @media (min-width: @tablet-width) {
 

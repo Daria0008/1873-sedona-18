@@ -2,7 +2,6 @@
   display: block;
   min-width: 320px;
   width: 100%;
-  padding-bottom: 56.25%;
   background-size: cover;
   background-position: center;
 }
@@ -11,7 +10,10 @@
 @media (min-width: @mobile-width) {
 
   .logoarea{
+    position: relative;
     height: 389px;
+    min-width: 320px;
+    width: 100%;
     background-image: url("/img/bg-back-mobile-1x.jpg");
   }
 
@@ -21,6 +23,28 @@
 
   @media (min-resolution: @retina-dppx) {
     background-image: url("");
+  }
+
+  .bg-intro-triangle-desktop{
+    display: none;
+  }
+
+  .bg-intro-triangle-tablet{
+    display: none;
+  }
+
+  .bg-intro-triangle-mobile{
+
+
+
+  }
+
+  .text-sedona-index{
+    display: block;
+    width: 281px;
+    height: 214;
+    margin: 0 auto;
+    padding-top: 90px;
   }
 
 }

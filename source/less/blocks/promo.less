@@ -1,7 +1,10 @@
 .promo{
   display: block;
   min-width: 320px;
+  max-width: 1200px;
   width: 100%;
+  margin: 0 auto;
+  background-color: @white;
 }
 
 .promo__description{
@@ -32,7 +35,7 @@
 }
 
 .promo__item--other{
-  background-color: @grey;
+  background-color: @grey2;
   width: 100%;
 }
 
@@ -52,9 +55,13 @@
 @media (min-width: @mobile-width) {
 
   .promo__description{
-    height: 202px;
-    padding-left: 25px;
-    padding-right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 255px;
+    height: 149px;
+    margin: 0 auto;
+    padding-top: 43px;
   }
 
   .promo__wrapper{
@@ -65,8 +72,24 @@
     font-size: 18px;
   }
 
-  .promo__header br{
+  .promo__header br, .promo__itemheader br, .promo__text br {
     display: none;
+  }
+
+  .promo__item--first{
+    background-image: url("/img/bg-triangle.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .promo__wrapper--first {
+    display: block;
+    width: 265px;
+    height: 105px;
+    margin: 0 auto;
+    padding-top: 43px;
+    padding-bottom: 63px;
   }
 
   .promo__item--first,
@@ -122,20 +145,42 @@
 @media (min-width: @tablet-width) {
 
   .promo__description{
-    height: 206px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 490px;
+    height: 100px;
+    margin: 0 auto;
+    padding-top: 51px;
+    padding-bottom: 55px;
   }
 
   .promo__header{
     font-size: 21px;
+    margin: 0;
   }
 
-  .promo__header br{
+  .promo__header br, .promo__itemheader br, .promo__text br {
     display: inline;
   }
 
-
   .promo__wrapper{
     min-height: 1024px;
+  }
+
+  .promo__item--first{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-image: none;
+  }
+
+  .promo__wrapper--first {
+    display: block;
+    width: 162px;
+    height: 161px;
+    padding: 46px 47px 49px 47px;
   }
 
   .promo__item--first,
@@ -148,6 +193,7 @@
   .promo__item--first .promo__itemheader,
   .promo__item--second .promo__itemheader{
     font-size: 21px;
+    margin: 0;
   }
 
   .promo__bottom{
@@ -211,20 +257,46 @@
   .promo__description{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 206px;
+    justify-content: space-between;
+    width: 490px;
+    height: 100px;
+    margin: 0 auto;
+    padding-top: 51px;
+    padding-bottom: 55px;
   }
 
   .promo__header{
     font-size: 21px;
+    margin: 0;
   }
 
-  .promo__header br{
+  .promo__header br, .promo__itemheader br, .promo__text br {
     display: inline;
   }
 
   .promo__wrapper{
     min-height: 1024px;
+  }
+
+  .promo__item--first{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1200px;
+    height: 256px;
+    background-image: none;
+  }
+
+  .promo__item--first picture, .promo__item--first img{
+    width: 800px;
+    height: 256px;
+  }
+
+  .promo__wrapper--first {
+    display: block;
+    width: 265px;
+    height: 140px;
+    padding: 53px 68px 63px 67px;
   }
 
   .promo__list{

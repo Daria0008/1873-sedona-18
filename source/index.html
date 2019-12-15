@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
 
   <body class="mainbody">
@@ -149,8 +149,10 @@
             <a class="nav__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="nav__item nav__item--logo">
-            <a class="nav__link" href="index.html" area-label="Герб Седоны">
-              <img class="nav__logo" src="/img/logo-sedona-mobile.svg" width="102" height="83" alt="Герб Седоны">
+            <a class="nav__link--logo" href="index.html" area-label="Герб Седоны">
+              <picture>
+                <img class="nav__logo" src="/img/logo-sedona-mobile.svg" width="102" height="83" alt="Герб Седоны">
+              </picture>
             </a>
           </li>
           <li class="nav__item">
@@ -162,7 +164,7 @@
         </ul>
       </nav>
       <div class="logoarea logoarea--big">
-        <svg class="text-sedona-index" width="auto" viewBox="0 0 459.754 350.074">
+        <svg class="text-sedona-index" height="auto" viewBox="0 0 459.754 350.074">
           <use xlink:href="#text-sedona-index"></use>
         </svg>
     </header>
@@ -176,13 +178,22 @@
         </section>
         <section class="promo__wrapper">
             <div class="promo__item promo__item--first">
-              <h3 class="promo__itemheader">Настоящий городок</h3>
-              <p class="promo__text">— №1 —</p>
-              <p class="promo__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
-              <img class="promo__image--house" src="/img" width="520" height="260" alt="Домик шерифа">
+              <div class="promo__wrapper--first">
+                <h3 class="promo__itemheader">Настоящий <br>городок</h3>
+                <p class="promo__text">— №1 —</p>
+                <p class="promo__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+              </div>
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="/img/main-city-desktop@1x.webp 1x, /img/main-city-desktop@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="/img/main-city-desktop@1x.jpg 1x, /img/main-city-desktop@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="/img/main-city-tablet@1x.webp 1x, /img/main-city-tablet@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="/img/main-city-tablet@1x.jpg 1x, /img/main-city-tablet@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 320px)" srcset="/img/main-city-mobile@1x.webp 1x, /img/main-city-mobile@2x.webp 2x">
+                <img class="promo__image--first" src="/img/main-city-mobile@1x.jpg" srcset="/img/main-city-mobile@2x.jpg 2x" width="100%" alt="Вид на городок">
+              </picture>
             </div>
             <ul class="promo__list">
-              <li class="promo__item promo__item--feature">
+              <!--<li class="promo__item promo__item--feature">
                 <svg class="icon icon-house" width="75" height="72">
                   <use xlink:href="#icon-house"></use>
                 </svg>
@@ -202,13 +213,22 @@
                 </svg>
                 <h3 class="promo__itemheader">Еда</h3>
                 <p class="promo__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-              </li>
+              </li>-->
             </ul>
-            <div class="promo__item--second">
-              <h3 class="promo__itemheader">Там есть мост дьявола</h3>
-              <p class="promo__text">— №2 —</p>
-              <p class="promo__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-              <img class="promo__image--bridge" src="/img" width="520" height="260" alt="Мост дьявола">
+            <div class="promo__item--first">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="/img/main-bridge-desktop@1x.webp 1x, /img/main-bridge-desktop@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="/img/main-bridge-desktop@1x.jpg 1x, /img/main-bridge-desktop@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="/img/main-bridge-tablet@1x.webp 1x, /img/main-bridge-tablet@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="/img/main-bridge-tablet@1x.jpg 1x, /img/main-bridge-tablet@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 320px)" srcset="/img/main-bridge-mobile@1x.webp 1x, /img/main-bridge-mobile@2x.webp 2x">
+                <img class="promo__image--first" src="/img/main-bridge-mobile@1x.jpg" srcset="/img/main-bridge-mobile@2x.jpg 2x" width="100%" alt="Мост дьявола">
+              </picture>
+              <div class="promo__wrapper--first">
+                <h3 class="promo__itemheader">Там есть <br>мост дьявола</h3>
+                <p class="promo__text">— №2 —</p>
+                <p class="promo__text">Да, по нему можно пройти! <br>Если вы осмелитесь, конечно</p>
+              <div class="promo__wrapper--first">
             </div>
             <ul class="promo__list promo__list--other">
               <li class="promo__item--other">

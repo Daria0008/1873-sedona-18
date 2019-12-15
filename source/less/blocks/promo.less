@@ -45,7 +45,6 @@
 }
 
 .promo__list{
-  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -64,7 +63,7 @@
     padding-top: 43px;
   }
 
-  .promo__wrapper{
+  .promo__wrapper {
     min-height: 1841px;
   }
 
@@ -76,11 +75,20 @@
     display: none;
   }
 
-  .promo__item--first{
+  .promo__item--first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 471px;
+    width: 100%;
     background-image: url("/img/bg-triangle.svg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
+  }
+
+  .promo__item--first:last-child {
+    background-image: none;
   }
 
   .promo__wrapper--first {
@@ -88,46 +96,67 @@
     width: 265px;
     height: 105px;
     margin: 0 auto;
-    padding-top: 43px;
-    padding-bottom: 63px;
+    padding-top: 61px;
+    padding-bottom: 45px;
   }
 
-  .promo__item--first,
-  .promo__item--second{
+  .promo__wrapper--first:nth-child(2) {
+    order: -1;
+    padding-top: 43px;
+  }
+
+  .promo__item--first {
     height: 471px;
     background-color: @blue;
     color: @white;
   }
 
-
-  .promo__item--first .promo__itemheader,
-  .promo__item--second .promo__itemheader{
+  .promo__item--first .promo__itemheader {
     font-size: 18px;
     color: @white;
     text-align: center;
+    margin: 0;
   }
 
-  .promo__list{
+  .promo__list {
     list-style: none;
     margin: 0;
-    padding: 0;
+    margin-top: 26px;
+    padding: 41px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 416px;
+    background: @white;
   }
 
-  .promo__item--feature{
-    padding-left: 70px;
+  .promo__item--feature {
+    display: block;
+    height: 92px;
+    width: 225px;
+    position: relative;
+    padding-left: 60px;
+    margin: 0 auto;
     text-align: left;
   }
 
-  .promo__item--feature .promo__text{
+  .promo__item--feature .promo__text {
     text-align: left;
+
   }
 
+  .promo__item--feature:last-child {
 
-  .promo__item--other{
+  }
+
+  .promo__icon {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    fill: @blue;
+  }
+
+  .promo__item--other {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -135,7 +164,7 @@
     border-bottom: 1px solid rgba(1, 1, 1, 0.2);
   }
 
-  .promo__item--other .promo__itemheader{
+  .promo__item--other .promo__itemheader {
     text-align: center;
   }
 
@@ -183,44 +212,71 @@
     padding: 46px 47px 49px 47px;
   }
 
-  .promo__item--first,
-  .promo__item--second{
+  .promo__wrapper--first:nth-child(2) {
+    order: none;
+  }
+
+  .promo__item--first {
     display: flex;
     flex-direction: row;
     height: 256px;
   }
 
-  .promo__item--first .promo__itemheader,
-  .promo__item--second .promo__itemheader{
+  .promo__item--first .promo__itemheader {
     font-size: 21px;
     margin: 0;
   }
 
-  .promo__bottom{
-    display: none;
-  }
-
-  .promo__list{
+  .promo__list {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    padding: 60px 50px 66px 50px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    height: 330px;
+    align-items: flex-start;
+    width: auto;
+    height: 204px;
+    background: @white;
+    margin-top: 0;
   }
 
-  .promo__item--feature{
+  .promo__item--feature {
+    display: block;
+    position: absolute;
     padding: 0;
-    padding-top: 167px;
     text-align: center;
+    width: 155px;
+    height: 205px;
   }
 
-  .promo__item--feature .promo__text{
+  .promo__item--feature:nth-child(2) {
+    margin-left: 508px;
+  }
+
+  .promo__item--feature:nth-child(3) {
+    margin-left: 258px;
+  }
+
+  .promo__item--feature .promo__text {
     display: inline-block;
     vertical-align: baseline;
     text-align: center;
     width: 162px;
+    height: 100px;
+  }
+
+  .promo__icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 75px;
+    height: 75px;
+    fill: @blue;
+  }
+
+  .promo__list .promo__itemheader {
+    padding-top: 80px;
   }
 
   .promo__item--other{
@@ -297,6 +353,10 @@
     width: 265px;
     height: 140px;
     padding: 53px 68px 63px 67px;
+  }
+
+  .promo__wrapper--first:nth-child(2) {
+    order: none;
   }
 
   .promo__list{

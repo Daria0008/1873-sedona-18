@@ -1,27 +1,30 @@
-.offer{
+.offer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   min-width: 320px;
+  max-width: 1200px;
   width: 100%;
+  background: @white;
 }
 
-.offer__header{
+.offer__header {
   font-family: "PTSans-Bold";
   line-height: 1.71;
   color: @deepblack;
   margin: 0 auto;
+  padding-top: 33px;
 }
 
-.offer p{
+.offer p {
   margin: 0 auto;
   display: inline-block;
   vertical-align: baseline;
   text-align: center;
 }
 
-.offer__link{
+.offer__link {
   display: inline-block;
   vertical-align: baseline;
   font-family: "PTSans-Bold";
@@ -40,27 +43,27 @@
 
 @media (min-width: @mobile-width) {
 
-  .offer{
+  .offer {
     height: 287px;
     min-width: 320px;
     width: 100%;
   }
 
 
-.offer__header{
+.offer__header {
   font-size: 21px;
 }
 
-  .offer p{
+  .offer p {
     width: 262px;
     height: 30px;
   }
 
-  .offer br{
+  .offer br {
     display: none;
   }
 
-  .offer__link{
+  .offer__link {
     padding-left: 47px;
     padding-right: 47px;
   }
@@ -69,27 +72,27 @@
 
 @media (min-width: @tablet-width) {
 
-  .offer{
+  .offer {
     height: 331px;
     min-width: 768px;
     width: 100%;
   }
 
-  .offer__header{
+  .offer__header {
     font-size: 30px;
     line-height: 0.87;
   }
 
-  .offer p{
+  .offer p {
     width: 435px;
     height: 20px;
   }
 
-  .offer br{
+  .offer br {
     display: inline;
   }
 
-  .offer__link{
+  .offer__link {
     padding-left: 124px;
     padding-right: 124px;
   }
@@ -99,18 +102,20 @@
 
 @media (min-width: @desktop-width) {
 
-  .offer{
+  .offer {
     height: 331px;
-    min-width: 1200px;
-    width: 100%;
+    min-width: 458px;
+    width: 458px;
+    margin: 0 auto;
+    padding: 57px 371px 66px 371px;
   }
 
-  .offer__header{
+  .offer__header {
     font-size: 30px;
     line-height: 0.87;
   }
 
-  .offer p{
+  .offer p {
     margin: 0;
     display: inline-block;
     vertical-align: baseline;
@@ -119,11 +124,11 @@
     height: 20px;
   }
 
-  .offer br{
+  .offer br {
     display: inline;
   }
 
-  .offer__link{
+  .offer__link {
     padding-left: 136px;
     padding-right: 136px;
   }

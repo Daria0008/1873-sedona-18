@@ -1,4 +1,4 @@
-.promo{
+.promo {
   display: block;
   min-width: 320px;
   max-width: 1200px;
@@ -7,44 +7,44 @@
   background-color: @white;
 }
 
-.promo__description{
+.promo__description {
   display: block;
   margin: 0 auto;
 }
 
-.promo__header{
+.promo__header {
   font-family: "PTSans-Bold";
   color: @deepblack;
   text-align: center;
 }
 
-.promo__text{
+.promo__text {
   text-align: center;
 }
 
-.promo__wrapper{
+.promo__wrapper {
   display: block;
   min-width: 320px;
   width: 100%;
   padding: 0;
 }
 
-.promo__item{
+.promo__item {
   display: block;
   text-align: center;
 }
 
-.promo__item--other{
+.promo__item--other {
   background-color: @grey2;
   width: 100%;
 }
 
-.promo__itemheader{
+.promo__itemheader {
   font-family: "PTSans-Bold";
   color: @deepblack;
 }
 
-.promo__list{
+.promo__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -67,7 +67,7 @@
     min-height: 1841px;
   }
 
-  .promo__header{
+  .promo__header {
     font-size: 18px;
   }
 
@@ -145,15 +145,17 @@
 
   }
 
-  .promo__item--feature:last-child {
-
-  }
-
   .promo__icon {
     position: absolute;
     top: 10px;
     left: 20px;
     fill: @blue;
+  }
+
+  .promo__wrapper--other {
+    background-color: @grey2;
+    margin: 0 auto;
+    width: 100%;
   }
 
   .promo__item--other {
@@ -173,7 +175,7 @@
 
 @media (min-width: @tablet-width) {
 
-  .promo__description{
+  .promo__description {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -184,7 +186,7 @@
     padding-bottom: 55px;
   }
 
-  .promo__header{
+  .promo__header {
     font-size: 21px;
     margin: 0;
   }
@@ -193,11 +195,11 @@
     display: inline;
   }
 
-  .promo__wrapper{
+  .promo__wrapper {
     min-height: 1024px;
   }
 
-  .promo__item--first{
+  .promo__item--first {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -279,6 +281,11 @@
     padding-top: 80px;
   }
 
+  .promo__wrapper--other {
+    width: 100%;
+    background-color: @grey2;
+  }
+
   .promo__list--other {
    display: flex;
    flex-direction: row;
@@ -286,10 +293,10 @@
    width: 768px;
    height: 256px;
    margin: 0 auto;
-   background-color: @grey;
+   background-color: @grey2;
   }
 
-  .promo__item--other{
+  .promo__item--other {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -300,7 +307,7 @@
     border: none;
   }
 
-  .promo__item--other .promo__itemheader{
+  .promo__item--other .promo__itemheader {
     display: inline-block;
     vertical-align: baseline;
     text-align: center;
@@ -330,7 +337,7 @@
     padding-bottom: 55px;
   }
 
-  .promo__header{
+  .promo__header {
     font-size: 21px;
     margin: 0;
   }
@@ -339,11 +346,11 @@
     display: inline;
   }
 
-  .promo__wrapper{
+  .promo__wrapper {
     min-height: 1024px;
   }
 
-  .promo__item--first{
+  .promo__item--first {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -352,7 +359,7 @@
     background-image: none;
   }
 
-  .promo__item--first picture, .promo__item--first img{
+  .promo__item--first picture, .promo__item--first img {
     width: 800px;
     height: 256px;
   }
@@ -379,7 +386,7 @@
     background: @white;
   }
 
-  .promo__item--feature{
+  .promo__item--feature {
     display: block;
     position: relative;
     padding: 0;
@@ -412,7 +419,7 @@
     margin-bottom: 32px;
   }
 
-  .promo__item--feature .promo__text{
+  .promo__item--feature .promo__text {
     display: inline-block;
     vertical-align: baseline;
     text-align: center;
@@ -420,28 +427,34 @@
     margin-top: 0;
   }
 
-  .promo__item--other{
+  .promo__list--other {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 1200px;
+   height: 256px;
+   background-color: @grey2;
+  }
+
+  .promo__item--other {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    flex-grow: 1;
-    align-items: center;
+    width: 400px;
     height: 256px;
-    min-width: 400px;
     border: none;
   }
 
-  .promo__item--other .promo__itemheader{
+  .promo__item--other .promo__itemheader {
     display: inline-block;
     vertical-align: baseline;
     text-align: center;
     width: 120px;
-    margin-top: ;
+    margin-top: 50px;
   }
 
   .promo__item--other .promo__text{
-    display: inline-block;
-    vertical-align: baseline;
+    display: block;
     text-align: center;
     width: 260px;
   }

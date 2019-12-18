@@ -81,14 +81,13 @@
     justify-content: space-between;
     height: 471px;
     width: 100%;
+  }
+
+  .promo__item--first:first-child {
     background-image: url("/img/bg-triangle.svg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
-  }
-
-  .promo__item--first:last-child {
-    background-image: none;
   }
 
   .promo__wrapper--first {
@@ -205,6 +204,7 @@
     justify-content: space-between;
     width: 100%;
     background-image: none;
+    height: 256px;
   }
 
   .promo__wrapper--first {
@@ -218,11 +218,10 @@
     order: none;
   }
 
-  .promo__item--first {
-    display: flex;
-    flex-direction: row;
-    height: 256px;
+  .promo__item--first:first-child {
+    background-image: none;
   }
+
 
   .promo__item--first .promo__itemheader {
     font-size: 21px;
@@ -356,6 +355,10 @@
     justify-content: space-between;
     width: 1200px;
     height: 256px;
+    background-image: none;
+  }
+
+  .promo__item--first:first-child {
     background-image: none;
   }
 

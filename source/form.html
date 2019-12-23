@@ -95,92 +95,83 @@
   </header>
 
   <main>
-    <section class="promo__description">
-      <h2 class="promo__header">Оставьте свой отзыв</h2>
-      <p class="promo__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-    </section>
-    <form class="form">
-      <div class="form__section">
-        <h2  class="promo__header">Представьтесь:</h2>
-        <label for="firstname">Имя<sup>*</sup>:
-            <input class="form__firstname" type="text" name="firstname" id="firstname" value="Петр">
-        </label>
-        <label for="lastname">Фамилия<sup>*</sup>:
-            <input type="text" name="lastname" id="lastname" value="Иванов">
-        </label>
-        <label for="thirdname">Отчество<sup>*</sup>:
-            <input type="text" name="thirdname" id="thirdname" value="Александрович">
-        </label>
-      </div>
-      <div class="form__section">
-        <h2  class="promo__header">Контактная информация:</h2>
-        <label for="phone">Контактный телефон<sup>*</sup>:
-            <input  class="form__contact" type="text" name="phone" id="phone" value="Введите телефон">
-              <div class="form__icon">
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
-                  <g id="Page-1">
-                    <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
-                      <g id="phone" transform="translate(85.000000, 126.000000)">
-                        <path id="Shape" fill="#010101" d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z"/>
+    <section class="formpage">
+      <section class="promo__description">
+        <h2 class="promo__header">Оставьте свой отзыв</h2>
+        <p class="promo__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </section>
+      <form class="form">
+        <div class="form__section">
+          <h2  class="promo__header">Представьтесь:</h2>
+          <label for="firstname">Имя<sup>*</sup>:
+              <input class="form__firstname" type="text" name="firstname" id="firstname" value="Петр">
+          </label>
+          <label for="lastname" class="form__name">Фамилия<sup>*</sup>:
+              <input type="text" name="lastname" id="lastname" value="Иванов">
+          </label>
+          <label for="thirdname" class="form__name">Отчество<sup>*</sup>:
+              <input type="text" name="thirdname" id="thirdname" value="Александрович">
+          </label>
+        </div>
+        <div class="form__section">
+          <h2  class="promo__header">Контактная информация:</h2>
+          <label for="phone">Контактный телефон<sup>*</sup>:
+              <input  class="form__contact" type="text" name="phone" id="phone" value="Введите телефон">
+                <div class="form__icon">
+                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
+                    <g id="Page-1">
+                      <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
+                        <g id="phone" transform="translate(85.000000, 126.000000)">
+                          <path id="Shape" fill="#010101" d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z"/>
+                        </g>
                       </g>
                     </g>
-                  </g>
-                </svg>
-              </div>
-            </input>
-        </label>
-        <label for="e-mail">Электронная почта<sup>*</sup>:
-            <input class="form__contact" type="text" name="e-mail" id="e-mail" value="Введите e-mail">
-              <div class="form__icon">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
-                  <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z"/>
-                </svg>
-              </div>
-            </input>
-        </label>
-      </div>
-      <div class="form__section">
-        <h2 class="promo__header">Ваше общее впечатление:</h2>
-        <label for="good"class="form__radiolabel">
-            <input type="radio" name="impression" id="good" value="good" checked>
-            Скорее положительное
-        </label>
-        <label for="bad" class="form__radiolabel">
-            <input type="radio" name="impression" id="bad" value="bad">
-            Скорее отрицательное
-        </label>
-        <label for="dontknow" class="form__radiolabel">
-            <input type="radio" name="impression" id="dontknow" value="dontknow">
-            Затрудняюсь ответить
-        </label>
-      </div>
-      <div class="form__section">
-        <h2 class="promo__header">Посещенные достопримечательности:</h2>
-        <label for="bridge">
-            <input type="checkbox" name="bridge" id="bridge" value="bridge" checked>
-            Мост Дьявола
-        </label>
-        <label for="mountain">
-          <input type="checkbox" name="mountain" id="mountain" value="mountain" checked>
-          Гора-Колокол
+                  </svg>
+                </div>
+              </input>
           </label>
-        <label for="park">
-            <input type="checkbox" name="park" id="park" value="park" checked>
-            Слайд-парк
-        </label>
-        <label for="redrock">
-            <input type="checkbox" name="redrock" id="redrock" value="redrock">
-            Красные скалы
-        </label>
-      </div>
-      <div class="form__section">
-        <h2 class="promo__header">Опишите свои эмоции:</h2>
-        <textarea rows="6" cols="26">Опишите подробно все свои восторги</textarea>
-      </div>
-      <div class="form__section">
-        <input type="submit" name="send" value="Отправить отзыв">
-      </div>
-    </form>
+          <label for="e-mail">Электронная почта<sup>*</sup>:
+              <input class="form__contact" type="text" name="e-mail" id="e-mail" value="Введите e-mail">
+                <div class="form__icon">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                    <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z"/>
+                  </svg>
+                </div>
+              </input>
+          </label>
+        </div>
+        <div class="form__section">
+          <h2 class="promo__header">Ваше общее впечатление:</h2>
+          <label for="good" class="form__radiolabel">Скорее положительное</label>
+          <input type="radio" name="impression" id="good" value="good" checked>
+          <label for="bad" class="form__radiolabel">Скорее отрицательное</label>
+          <input type="radio" name="impression" id="bad" value="bad">
+          <label for="dontknow" class="form__radiolabel">Затрудняюсь ответить</label>
+          <input type="radio" name="impression" id="dontknow" value="dontknow">
+        </div>
+        <div class="form__section">
+          <h2 class="promo__header">Посещенные достопримечательности:</h2>
+          <label for="bridge" class="form__radiolabel">Мост Дьявола</label>
+          <input type="checkbox" name="bridge" id="bridge" value="bridge" checked>
+          <label for="mountain" class="form__radiolabel">Гора-Колокол</label>
+          <input type="checkbox" name="mountain" id="mountain" value="mountain" checked>
+          <label for="park" class="form__radiolabel">Слайд-парк</label>
+          <input type="checkbox" name="park" id="park" value="park" checked>
+          <label for="redrock" class="form__radiolabel">Красные скалы</label>
+          <input type="checkbox" name="redrock" id="redrock" value="redrock">
+        </div>
+        <div class="form__section">
+          <h2 class="promo__header">Опишите свои эмоции:</h2>
+          <textarea>Опишите подробно все свои восторги</textarea>
+        </div>
+        <div class="form__section">
+          <input type="submit" name="send" value="Отправить отзыв">
+        </div>
+        <div class="form__section">
+          <p><sup>*</sup> — обязательные поля</p>
+        </div>
+      </form>
+    </section>
   </main>
 
   <footer class="footer">

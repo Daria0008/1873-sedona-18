@@ -17,10 +17,13 @@
   }
 
   .form__section {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 280px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     margin: 0 auto;
   }
 
@@ -28,9 +31,27 @@
     position: relative;
   }
 
-    .form__firstname {
+  .form__section textarea {
+    font-family: "PTSans-Bold";
+    font-size: 18px;
+    line-height: 26px;
+    background-color: @grey;
+    padding-left: 21px;
+    padding-top: 22px;
+    width: 257px;
+    height: 138px;
+    border: none;
+    outline: none;
+    margin-bottom: 21px;
+  }
+
+  .form__firstname {
     margin-top: 22px;
     width: 191px;
+  }
+
+  .form__name input[type="text"] {
+    width: 153px;
   }
 
   .form__contact {
@@ -51,6 +72,7 @@
 
   .form__section input[type="text"] {
     font-family: "PTSans-Bold";
+    font-size: 18px;
     height: 14px;
     border: none;
     padding-left: 22px;
@@ -69,8 +91,17 @@
   }
 
   .form__radiolabel {
+    position: absolute;
+    top: 33px;
+    left: 73px;
+    display: inline-block;
+    vertical-align: baseline;
     font-family: "PTSans-Bold";
+    font-size: 18px;
     text-transform: none;
+    color: @deepblack;
+    width: 185px;
+    height: 20px;
   }
 
   .form__section input[type="checkbox"] {
@@ -78,6 +109,93 @@
     height: 46px;
     background-color: @grey;
     border: none;
+    outline: none;
+    border-radius: 3px;
+  }
+
+  .form__section input[type="submit"] {
+    font-family: "PTSans-Bold";
+    font-size: 21px;
+    text-transform: uppercase;
+    color: @white;
+    display: block;
+    background-color: @blue;
+    width: 280px;
+    height: 58px;
+    border: none;
+    margin-bottom: 47px;
+  }
+
+  .form__section:last-child {
+    display: none;
+  }
+
+}
+
+@media (min-width: @tablet-width) {
+
+  .formpage {
+    width: 768px;
+    margin: 0 auto;
+    background-color: @white;
+  }
+
+  .form form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 768px;
+    height: 1667px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .form__section {
+    width: 648px;
+  }
+
+  .form__section:first-child {
+    width: 300px;
+  }
+
+  .form__section:nth-child(2) {
+    display: none;
+    width: 300px;
+    order: -2;
+
+  }
+
+  .form__section:nth-child(3) {
+    width: 300px;
+    order: -2;
+  }
+
+  .form__section:nth-child(4) {
+    display: none;
+    width: 320px;
+  }
+
+  .form__section:nth-child(5) {
+    display: none;
+    width: 320px;
+  }
+
+  .form__section:nth-child(6) {
+    display: none;
+    width: 320px;
+  }
+
+
+  .form__section:last-child {
+
+    width: 165px;
+    display: none;
+  }
+
+  .form__section textarea {
+    width: 626px;
+    height: 138px;
   }
 
 }

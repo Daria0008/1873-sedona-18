@@ -1,6 +1,7 @@
 .form {
   min-width: 320px;
   max-width: 1200px;
+  position: relative;
 }
 
 @media (min-width: @mobile-width) {
@@ -88,6 +89,7 @@
     height: 46px;
     background-color: @grey;
     border: none;
+    display: none;
   }
 
   .form__radiolabel {
@@ -111,6 +113,7 @@
     border: none;
     outline: none;
     border-radius: 3px;
+    display: none;
   }
 
   .form__section input[type="submit"] {
@@ -147,7 +150,6 @@
     align-items: flex-start;
     flex-wrap: wrap;
     width: 648px;
-
     margin: 0 auto;
   }
 
@@ -263,16 +265,85 @@
 
   }
 
-  .form__section:last-child {
+  .form__section:nth-child(6) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .form__section textarea {
     width: 626px;
     height: 138px;
   }
+
+  .form__text {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 180px;
+    height: 20px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+
+  .formpage {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: @white;
+  }
+
+  .form {
+    width: 960px;
+  }
+
+  .form__section {
+    width: 960px;
+  }
+
+  .form__section:first-child {
+    width: 480px;
+    height: 356px;
+    padding: 0;
+  }
+
+  .form__firstname {
+    width: 350px;
+  }
+
+  .form__name input[type="text"] {
+    width: 312px;
+  }
+
+  .form__section:nth-child(2) {
+    display: flex;
+    flex-direction: row:
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 960px;
+    height: 223px;
+
+    label {
+      display: block;
+      width: 20px;
+      background: red;
+    }
+  }
+
+  .form__section:nth-child(2) input[type="text"] {
+    margin-left: 16px;
+    width: 480px;
+  }
+
+  .form__icon {
+    left: 590px;
+    top: 36.7px;
+    display: none;
+  }
+
+
+
 
 }

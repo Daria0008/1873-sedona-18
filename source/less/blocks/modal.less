@@ -1,0 +1,58 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 207px;
+  margin: 0 auto;
+  background: @white;
+}
+
+@media (min-width: @mobile-width) {
+
+  .modal__button {
+    font-family: "PTSans-Bold";
+    font-size: 21px;
+    text-transform: uppercase;
+    color: @white;
+    display: block;
+    background-color: @blue;
+    width: 180px;
+    height: 58px;
+    border: none;
+    margin: 0 auto;
+  }
+
+  .modal--error {
+    width: 207px;
+    position: absolute;
+    bottom: 200px;
+    height: 203px;
+    padding: 42px 57px 35px 56px;
+  }
+
+  .modal--response {
+    height: 323px;
+  }
+
+}
+
+@media (min-width: @tablet-width) {
+
+  .modal--error {
+    left: 124px;
+    bottom: 223px;
+    width: 277px;
+    height: 234px;
+    padding: 64px 61px 49px 62px;
+  }
+
+  .modal__button {
+    width: 272px;
+  }
+
+  .modal .promo__header {
+   font-size: 30px;
+   line-height: 40px;
+  }
+
+}

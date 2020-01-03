@@ -28,49 +28,6 @@
     margin: 0 auto;
   }
 
-  .form__section label {
-    position: relative;
-  }
-
-  .form__section textarea {
-    font-family: "PTSans-Bold";
-    font-size: 18px;
-    line-height: 26px;
-    background-color: @grey;
-    padding-left: 21px;
-    padding-top: 22px;
-    width: 257px;
-    height: 138px;
-    border: none;
-    outline: none;
-    margin-bottom: 21px;
-  }
-
-  .form__firstname {
-    margin-top: 22px;
-    width: 191px;
-  }
-
-  .form__name input[type="text"] {
-    width: 153px;
-  }
-
-  .form__contact {
-    margin-top: 14px;
-    width: 172px;
-  }
-
-  .form__icon {
-    position: absolute;
-    left: 208px;
-    top: 36.5px;
-    display: block;
-    width: 18px;
-    height: 15px;
-    padding: 20px;
-    background-color: @grey2;
-  }
-
   .form__section input[type="text"] {
     font-family: "PTSans-Bold";
     font-size: 18px;
@@ -84,53 +41,144 @@
     background-color: @grey;
   }
 
-  .form__section--impressions input[type="radio"] {
-    width: 46px;
-    height: 46px;
-    background-color: @grey;
-    border: none;
+  .form__section--introduce {
+
+    label {
+      margin-left: 13.5px;
+    }
+
+    .form__firstname {
+      margin-top: 22px;
+      width: 191px;
+    }
+
+    .form__name input[type="text"] {
+      width: 153px;
+    }
   }
 
-  .form__radiolabel {
-    position: absolute;
-    top: 33px;
-    left: 73px;
-    display: inline-block;
-    vertical-align: baseline;
+  .form__section--contactInfo {
+
+    .promo__header {
+      margin-bottom: 29px;
+    }
+
+    label {
+      position: relative;
+    }
+
+    .form__contact {
+      margin-top: 14px;
+      width: 172px;
+    }
+
+    .form__icon {
+      position: absolute;
+      left: 208px;
+      top: 36.5px;
+      display: block;
+      width: 18px;
+      height: 15px;
+      padding: 20px;
+      background-color: @grey2;
+    }
+  }
+
+  .form__section--impressions {
+    height: 288px;
+    width: 280px;
+
+    input[type="radio"] {
+      width: 46px;
+      height: 46px;
+      background-color: @grey;
+      border: none;
+      margin: 0;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .form__radiolabel {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-family: "PTSans-Bold";
+      font-size: 18px;
+      text-transform: none;
+      color: @deepblack;
+      width: 280px;
+      height: 46px;
+    }
+  }
+
+  .form__section--sight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 408px;
+    width: 280px;
+
+    .promo__header {
+      margin-top: 0;
+    }
+
+    label {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 46px;
+      width: 195px;
+      margin-left: 24px;
+    }
+
+    input[type="checkbox"] {
+      width: 46px;
+      height: 46px;
+      background-color: @grey;
+      border: none;
+      outline: none;
+      border-radius: 3px;
+      margin: 0;
+      margin-right: 25px;
+    }
+  }
+
+
+  .form__section--emotions textarea {
     font-family: "PTSans-Bold";
     font-size: 18px;
-    text-transform: none;
-    color: @deepblack;
-    width: 185px;
-    height: 20px;
-  }
-
-  .form__section--sight input[type="checkbox"] {
-    width: 46px;
-    height: 46px;
+    line-height: 26px;
     background-color: @grey;
+    padding-left: 21px;
+    padding-top: 22px;
+    width: 257px;
+    height: 138px;
     border: none;
     outline: none;
-    border-radius: 3px;
+    margin-top: 24px;
+    margin-bottom: 21px;
   }
 
-  .form__section--submit input[type="submit"] {
-    font-family: "PTSans-Bold";
-    font-size: 21px;
-    text-transform: uppercase;
-    color: @white;
-    display: block;
-    background-color: @blue;
-    width: 280px;
-    height: 58px;
-    border: none;
-    margin-bottom: 47px;
-  }
+  .form__section--submit {
 
-  .form__section--submit .form__text {
-    display: none;
-  }
+    input[type="submit"] {
+      font-family: "PTSans-Bold";
+      font-size: 21px;
+      text-transform: uppercase;
+      color: @white;
+      display: block;
+      background-color: @blue;
+      width: 280px;
+      height: 58px;
+      border: none;
+      margin-bottom: 47px;
+    }
 
+    .form__text {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -167,14 +215,14 @@
     .promo__header {
       text-align: left;
     }
-  }
 
-  .form__firstname {
-    width: 218.5px;
-  }
+    .form__firstname {
+      width: 218.5px;
+    }
 
-  .form__name input[type="text"] {
+    .form__name input[type="text"] {
     width: 181px;
+    }
   }
 
 

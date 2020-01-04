@@ -144,7 +144,6 @@
     }
   }
 
-
   .form__section--emotions textarea {
     font-family: "PTSans-Bold";
     font-size: 18px;
@@ -200,53 +199,59 @@
   }
 
   .form__section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 648px;
     padding: 0;
-    padding-top: 42px;
-    padding-bottom: 42px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin: 0 auto;
   }
 
   .form__section--introduce {
-    width: 294px;
-    height: 356px;
-    padding-left: 30px;
+    width: 266px;
+    height: 294px;
     order: -1;
+    padding-left: 58px;
 
-    .promo__header {
-      text-align: left;
+    input[type="text"] {
+      margin-left: 15px;
+      margin-top: 0;
+      margin-bottom: 0;
     }
 
-    .form__firstname {
-      width: 218.5px;
-    }
-
-    .form__name input[type="text"] {
-    width: 181px;
+    label {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 58px;
+      width: 266px;
+      margin-left: 0;
     }
   }
-
 
   .form__section--contactInfo {
-    width: 648px;
     height: 300px;
-  }
 
-  .form__section--contactInfo input[type="text"] {
-    margin-left: 0;
-  }
+    input[type="text"] {
+      margin-left: 0;
+    }
 
-  .form__contact {
-    width: 590px;
-  }
+    .form__contact {
+      width: 590px;
+    }
 
-  .form__icon {
-    left: 590px;
-    top: 36.7px;
+    .form__icon {
+      left: 590px;
+      top: 36.5px;
+    }
   }
 
   .form__section--impressions {
     width: 324px;
-    height: 356px;
+    height: 294px;
     order: -2;
 
     .promo__header {
@@ -255,58 +260,46 @@
   }
 
   .form__section--sight {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    aligh-content: center;
     width: 648px;
-    height: 285px;
-    background: red;
-    position: relative;
+    height: 208px;
+    padding-left: 100px;
+    padding-right: 100px;
 
     .promo__header {
       display: inline-block;
       vertical-align: baseline;
       width: 278px;
-      padding-left: 184px;
-      padding-right: 185px;
       height: 54px;
-      margin: 0 auto;
-      background-color: blue;
       align-self: flex-start;
+      padding-left: 85px;
+      padding-right: 85px;
     }
 
-    .form__radiolabel {
-      width: 230px;
+    label {
+      width: 195px;
       height: 46px;
-      padding-left: 75px;
-      padding-top: 15px;
-      margin-bottom: 32px;
+      font-family: "PTSans-Bold";
+      font-size: 18px;
+      text-transform: none;
+      color: @deepblack;
+      margin-left: 0;
     }
-
-    input[type="checkbox"]:first-child {
-      display: block;
-      position: absolute;
-      top: 135px;
-      left: 84px;
-    }
-
-    input[type="checkbox"]:nth-child(2) {
-      display: block;
-      position: absolute;
-      top: 200px;
-      left: 84px;
-    }
-
-    > * {background-color: yellow;}
-  }
-
-  .form__radiolabel {
-    position: relative;
   }
 
   .form__section--emotions {
+    padding-bottom: 0;
 
     textarea {
       width: 626px;
       height: 138px;
+      margin-bottom: 0;
+      margin-top: 0;
     }
 
     .promo__header {
@@ -319,7 +312,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 0;
+    padding-top: 58px;
     padding-bottom: 0;
 
     .form__text {
@@ -329,7 +322,6 @@
       height: 20px;
     }
   }
-
 }
 
 @media (min-width: @desktop-width) {

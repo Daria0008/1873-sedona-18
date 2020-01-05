@@ -181,50 +181,54 @@
           <input type="submit" name="send" value="Отправить отзыв">
           <p class="form__text"><sup>*</sup> — обязательные поля</p>
         </div>
-        <section class="modal modal--error">
+        <section class="modal modal--error visually-hidden">
           <h2 class="promo__header">Что-то пошло <br>не так!</h2>
           <p class="promo__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
           <button class="modal__button">Ok</button>
         </section>
-        <section class="modal modal--response visually-hidden">
-          <h2 class="promo__header">Ваш отзыв отправлен!</h2>
-          <p class="promo__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-          <button class="modal__button">Закрыть окно</button>
+        <section class="modal modal--response">
+          <div class="modal--response__textwrapper">
+            <h2 class="promo__header">Ваш отзыв отправлен!</h2>
+            <p class="promo__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          </div>
+          <div class="modal--response__butground">
+            <button class="modal__button">Закрыть окно</button>
+          </div>
         </section>
       </form>
     </section>
   </main>
   <footer class="footer">
-      <h2 class="footer__tag">#VisitSedona</h2>
-      <ul class="footer__list">
-        <li class="footer__item">
-          <a href="#" class="footer__link" area-label="Седона в Твиттере">
-            <svg viewBox="0 0 17.5 14.663" width="18" height="14">
-              <use xlink:href="#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__link" area-label="Седона в Фейсбуке">
-            <svg width="9" height="18" viewBox="0 0 8.672 18.944">
-              <use xlink:href="#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__link" area-label="Седона на Ютюбе">
-            <svg width="20" height="14" viewBox="0 0 19.979 14.015">
-              <use xlink:href="#icon-youtube"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <div class="footer__copyright">
-        <p class="footer__text">Разработано</p>
-        <svg width="27" height="34" viewBox="0 0 26.943 34.09">
-          <use xlink:href="#logo-htmlacademy"></use>
-        </svg>
-      </div>
+    <h2 class="footer__tag">#VisitSedona</h2>
+    <ul class="footer__list">
+      <li class="footer__item">
+        <a href="#" class="footer__link" area-label="Седона в Твиттере">
+          <svg viewBox="0 0 17.5 14.663" width="18" height="14">
+            <use xlink:href="#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="#" class="footer__link" area-label="Седона в Фейсбуке">
+          <svg width="9" height="18" viewBox="0 0 8.672 18.944">
+            <use xlink:href="#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="#" class="footer__link" area-label="Седона на Ютюбе">
+          <svg width="20" height="14" viewBox="0 0 19.979 14.015">
+            <use xlink:href="#icon-youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <div class="footer__copyright">
+      <p class="footer__text">Разработано</p>
+      <svg width="27" height="34" viewBox="0 0 26.943 34.09">
+        <use xlink:href="#logo-htmlacademy"></use>
+      </svg>
+    </div>
   </footer>
 </body>
 

@@ -26,6 +26,12 @@
   height: 48px;
   margin-left: 6px;
   background-color: @blue;
+
+  &:active .footer__link {
+    fill: @white-faded;
+  }
+
+  .bluebuttons();
 }
 
 .footer__item:first-child {
@@ -61,6 +67,18 @@
   align-items: center;
   width: 129px;
   height: 34px
+}
+
+.footer__link--logo {
+
+  &:hover svg{
+   fill: @blue;
+  }
+
+  &:active svg{
+   fill: @deepblack-faded;
+  }
+
 }
 
 @media (min-width: @mobile-width) {

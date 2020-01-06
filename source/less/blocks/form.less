@@ -4,6 +4,20 @@
   position: relative;
 }
 
+.form__section input[type="text"] {
+  outline: none;
+
+  &:hover {
+    background-color: @grey-disabled;
+  }
+
+  &:active {
+    background-color: @white;
+    box-shadow: inset 0 0 0 4px @grey-disabled;
+    border-radius: 2px;
+  }
+}
+
 @media (min-width: @mobile-width) {
 
   .form form {
@@ -177,6 +191,8 @@
       height: 58px;
       border: none;
       margin-bottom: 47px;
+
+      .bluebuttons();
     }
 
     .form__text {

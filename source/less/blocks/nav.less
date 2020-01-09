@@ -18,10 +18,9 @@
   text-decoration: none;
 }
 
-
 @media (min-width: @mobile-width) {
 
-.nav__list {
+  .nav__list {
     margin: 0;
     padding: 0;
     width: 320px;
@@ -29,48 +28,79 @@
     flex-direction: column;
     width: 100%;
     background-color: @white;
-}
+  }
 
-.nav__item{
-  margin: 0;
-  padding: 0;
-  height: 55px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  background-color: @blue;
-  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  .nav__item {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 55px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: @blue;
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
 
-  &:active .nav__link {
+    &:active .nav__link {
       color: @white-faded;
     }
 
-  .bluebuttons();
-}
+    .bluebuttons();
+  }
 
-.nav__item--logo {
-  display: block;
-  padding-left: 36.5%;
-  background-color: @white;
-  overflow: visible;
-  order: 1;
+  .nav__item--logo {
+    display: block;
+    padding-left: 36.5%;
+    background-color: @white;
+    overflow: visible;
+    order: 1;
 
-  &:hover,
-  &:active,
-  &:disabled {
+    &:hover,
+    &:active,
+    &:disabled {
+      background-color: @white;
+    }
+  }
+
+
+  .nav__item svg {
+    fill: @white;
+  }
+
+  .nav__link {
+    color: @white;
+    margin: 0 auto;
+  }
+
+  .nav__closebutton {
+    position: absolute;
+    top: 30%;
+    left: 85%;
+    display: block;
+    width: 24px;
+    height: 23px;
+    border: none;
+    outline: none;
+    background-image: url("../img/icon-cross.svg");
+    background-position: center;
+    background-size: cover;
+    background-color: @blue;
+  }
+
+  .nav__menubutton {
+    position: absolute;
+    top: 30%;
+    left: 85%;
+    display: block;
+    width: 23px;
+    height: 24px;
+    border: none;
+    outline: none;
+    background-image: url("../img/icon-menu.svg");
+    background-position: center;
+    background-size: cover;
     background-color: @white;
   }
-}
-
-
-.nav__item svg{
-  fill: @white;
-}
-
-.nav__link{
-  color: @white;
-  margin: 0 auto;
-}
 
 }
 
@@ -78,6 +108,14 @@
 
   .nav {
     height: 56px;
+  }
+
+  .nav__closebutton {
+    display: none;
+  }
+
+  .nav__menubutton {
+    display: none;
   }
 
   .nav__list {

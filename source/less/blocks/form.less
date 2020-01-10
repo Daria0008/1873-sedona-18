@@ -4,20 +4,6 @@
   position: relative;
 }
 
-.form__section input[type="text"] {
-  outline: none;
-
-  &:hover {
-    background-color: @grey-disabled;
-  }
-
-  &:active {
-    background-color: @white;
-    box-shadow: inset 0 0 0 4px @grey-disabled;
-    border-radius: 2px;
-  }
-}
-
 @media (min-width: @mobile-width) {
 
   .form form {
@@ -140,7 +126,8 @@
         margin-left: 5px;
       }
 
-       &::after {
+      ::after {
+        display: none;
         content: "";
         position: absolute;
         top: 13px;
@@ -195,6 +182,7 @@
       }
 
       &::after {
+        display: none;
         content: "";
         position: absolute;
         top: 13px;
@@ -447,11 +435,6 @@
    .form__firstname {
       width: 350px;
     }
-  }
-
-  .form__section--contactInfo input[type="text"] {
-    margin-left: 16px;
-    width: 480px;
   }
 
   .form__section--contactInfo {

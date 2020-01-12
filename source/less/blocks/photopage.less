@@ -160,10 +160,25 @@
       padding: 22px 25px 24px 25px;
       background-color: @grey;
       opasity: 0%;
+
+      &--replay {
+        flex-grow: 2;
+      }
     }
 
-    .photopage__control--replay {
-      flex-grow: 2;
+    .photopage__button {
+      outline: none;
+      border: none;
+      background-color: @grey;
+      fill: @deepgray;
+
+      &:hover {
+        fill: @black;
+      }
+
+      &:active {
+        fill: @black-faded;
+      }
     }
   }
 }
@@ -289,11 +304,26 @@
       padding: 35px 42px 38px 35px;
       background-color: @deepblack-faded2;
       fill: @white;
+
+      &--replay {
+        order: -2;
+        flex-grow: 0;
+      }
     }
 
-    .photopage__control--replay {
-      order: -2;
-      flex-grow: 0;
+    .photopage__button {
+      outline: none;
+      border: none;
+      background-color: transparent;
+      fill: @white;
+
+      &:hover {
+        fill: @white-faded3;
+      }
+
+      &:active {
+        fill: @white-faded;
+      }
     }
   }
 }

@@ -1,4 +1,3 @@
-
 .photopage {
   display: block;
   min-width: 320px;
@@ -21,7 +20,7 @@
 }
 
 .photopage__itemheader {
-  font-family: "PTSans-Bold";
+  font-family: "PTSans-Bold", sans-serif;
   font-size: 14px;
   color: @deepblack;
   margin: 0;
@@ -35,13 +34,12 @@
 }
 
 .photopage__counter {
-  font-family: "PTSans-Bold";
+  font-family: "PTSans-Bold", sans-serif;
   color: @deepblack;
 }
 
 
 @media (min-width: @mobile-width) {
-
   .photopage {
     min-width: 320px;
     width: 100%;
@@ -60,7 +58,7 @@
     width: 100%;
   }
 
-  .photopage__item{
+  .photopage__item {
     display: block;
     height: 360px;
     width: 280px;
@@ -184,7 +182,6 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .photopage__list {
     padding: 0;
     width: 768px;
@@ -207,7 +204,11 @@
   .photopage__item:first-child {
     margin-left: 60px;
     width: 648px;
-    height: 360px;
+    height: 480px;
+
+    img {
+      height: 400px;
+    }
   }
 
   .photopage__item:nth-child(2n) {
@@ -242,7 +243,7 @@
     font-size: 30px;
   }
 
-  .photopage .promo__text{
+  .photopage .promo__text {
     width: 415px;
     margin: 0 auto;
   }
@@ -329,7 +330,6 @@
 }
 
 @media (min-width: @desktop-width) {
-
   .photopage__list {
     padding: 0;
     width: 1200px;
@@ -398,7 +398,8 @@
     top: 320px;
   }
 
-  .photopage__itemname, .photopage__like{
+  .photopage__itemname,
+  .photopage__like {
     display: flex;
   }
 

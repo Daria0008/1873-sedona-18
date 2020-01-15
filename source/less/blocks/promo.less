@@ -36,7 +36,7 @@
   text-align: center;
 }
 
-.promo__item--other {
+.promo__otherfeatures {
   background-color: @grey2;
   width: 100%;
 }
@@ -78,7 +78,7 @@
     display: none;
   }
 
-  .promo__item--first {
+  .promo__argument {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -95,14 +95,14 @@
     }
   }
 
-  .promo__item--first:first-child {
+  .promo__argument:first-child {
     background-image: url("/img/bg-triangle.svg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
   }
 
-  .promo__wrapper--first {
+  .promo__cover {
     display: block;
     width: 265px;
     height: 105px;
@@ -111,7 +111,7 @@
     padding-bottom: 45px;
   }
 
-  .promo__wrapper--first:nth-child(2) {
+  .promo__cover:nth-child(2) {
     order: -1;
     padding-top: 43px;
   }
@@ -149,13 +149,13 @@
     fill: @blue;
   }
 
-  .promo__wrapper--other {
+  .promo__listwrapper {
     background-color: @grey2;
     margin: 0 auto;
     width: 100%;
   }
 
-  .promo__item--other {
+  .promo__otherfeatures {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -163,7 +163,7 @@
     border-bottom: 1px solid rgba(1, 1, 1, 0.2);
   }
 
-  .promo__item--other .promo__itemheader {
+  .promo__otherfeatures .promo__itemheader {
     text-align: center;
   }
 }
@@ -195,7 +195,7 @@
     min-height: 1024px;
   }
 
-  .promo__item--first {
+  .promo__argument {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -204,22 +204,22 @@
     height: 256px;
   }
 
-  .promo__wrapper--first {
+  .promo__cover {
     display: block;
     width: 162px;
     height: 161px;
     padding: 46px 47px 49px 47px;
   }
 
-  .promo__wrapper--first:nth-child(2) {
+  .promo__cover:nth-child(2) {
     order: none;
   }
 
-  .promo__item--first:first-child {
+  .promo__argument:first-child {
     background-image: none;
   }
 
-  .promo__item--first .promo__itemheader {
+  .promo__argument .promo__itemheader {
     font-size: 21px;
     margin: 0;
   }
@@ -276,7 +276,7 @@
     padding-top: 80px;
   }
 
-  .promo__wrapper--other {
+  .promo__listwrapper {
     width: 100%;
     background-color: @grey2;
   }
@@ -291,7 +291,7 @@
     background-color: @grey2;
   }
 
-  .promo__item--other {
+  .promo__otherfeatures {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -302,14 +302,14 @@
     border: none;
   }
 
-  .promo__item--other .promo__itemheader {
+  .promo__otherfeatures .promo__itemheader {
     display: inline-block;
     vertical-align: baseline;
     text-align: center;
     width: 120px;
   }
 
-  .promo__item--other .promo__text {
+  .promo__otherfeatures .promo__text {
     display: inline-block;
     vertical-align: baseline;
     text-align: center;
@@ -345,7 +345,7 @@
     min-height: 1024px;
   }
 
-  .promo__item--first {
+  .promo__argument {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -354,24 +354,24 @@
     background-image: none;
   }
 
-  .promo__item--first:first-child {
+  .promo__argument:first-child {
     background-image: none;
   }
 
-  .promo__item--first picture,
-  .promo__item--first img {
+  .promo__argument picture,
+  .promo__argument img {
     width: 800px;
     height: 256px;
   }
 
-  .promo__wrapper--first {
+  .promo__cover {
     display: block;
     width: 265px;
     height: 140px;
     padding: 53px 68px 63px 67px;
   }
 
-  .promo__wrapper--first:nth-child(2) {
+  .promo__cover:nth-child(2) {
     order: none;
   }
 
@@ -436,7 +436,7 @@
     background-color: @grey2;
   }
 
-  .promo__item--other {
+  .promo__otherfeatures {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -445,7 +445,7 @@
     border: none;
   }
 
-  .promo__item--other .promo__itemheader {
+  .promo__otherfeatures .promo__itemheader {
     display: inline-block;
     vertical-align: baseline;
     text-align: center;
@@ -453,13 +453,13 @@
     margin-top: 50px;
   }
 
-  .promo__item--other .promo__text {
+  .promo__otherfeatures .promo__text {
     display: block;
     text-align: center;
     width: 260px;
   }
 
-  .promo__item--other .promo__text:nth-child(2n+1) {
+  .promo__otherfeatures .promo__text:nth-child(2n+1) {
     margin-bottom: 50px;
   }
 }

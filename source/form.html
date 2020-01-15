@@ -96,13 +96,13 @@
   <main>
     <section class="formpage">
       <h1 class="visually-hidden">Ваши впечатления от Седоны</h1>
-      <section class="promo__description">
-        <h2 class="promo__header">Оставьте свой отзыв</h2>
-        <p class="promo__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <section class="formpage__description">
+        <h2 class="formpage__header">Оставьте свой отзыв</h2>
+        <p class="formpage__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
       <form class="form">
         <div class="form__section form__section--introduce">
-          <h2 class="promo__header">Представьтесь:</h2>
+          <h2 class="formpage__header">Представьтесь:</h2>
           <label for="firstname">Имя<sup>*</sup>:
             <input class="form__firstname" type="text" name="firstname" id="firstname" value="Петр">
           </label>
@@ -114,7 +114,7 @@
           </label>
         </div>
         <div class="form__section form__section--contactInfo">
-          <h2 class="promo__header">Контактная информация:</h2>
+          <h2 class="formpage__header">Контактная информация:</h2>
           <label for="phone">Контактный телефон<sup>*</sup>:
             <input class="form__contact" type="text" name="phone" id="phone" value="Введите телефон">
             <div class="form__icon">
@@ -141,7 +141,7 @@
           </label>
         </div>
         <div class="form__section form__section--impressions">
-          <h2 class="promo__header">Ваше общее впечатление:</h2>
+          <h2 class="formpage__header">Ваше общее впечатление:</h2>
           <input type="radio" name="impression" id="good" value="good" checked>
           <label for="good" class="form__radiolabel">Скорее положительное</label>
           <input type="radio" name="impression" id="bad" value="bad">
@@ -150,7 +150,7 @@
           <label for="dontknow" class="form__radiolabel">Затрудняюсь ответить</label>
         </div>
         <div class="form__section form__section--sight">
-          <h2 class="promo__header">Посещенные достопримечательности:</h2>
+          <h2 class="formpage__header">Посещенные достопримечательности:</h2>
           <input type="checkbox" name="bridge" id="bridge" value="bridge" checked>
           <label for="bridge" class="form__radiolabel">Мост Дьявола</label>
           <input type="checkbox" name="mountain" id="mountain" value="mountain" checked>
@@ -161,7 +161,7 @@
           <label for="redrock" class="form__radiolabel">Красные скалы</label>
         </div>
         <div class="form__section form__section--emotions">
-          <h2 class="promo__header">Опишите свои эмоции:</h2>
+          <h2 class="formpage__header">Опишите свои эмоции:</h2>
           <textarea>Опишите подробно все свои восторги</textarea>
         </div>
         <div class="form__section form__section--submit">
@@ -169,16 +169,16 @@
           <p class="form__text"><sup>*</sup> — обязательные поля</p>
         </div>
         <section class="modal modal--error visually-hidden">
-          <h2 class="promo__header">Что-то пошло <br>не так!</h2>
-          <p class="promo__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <h2 class="formpage__header">Что-то пошло <br>не так!</h2>
+          <p class="formpage__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
           <button class="modal__button">Ok</button>
         </section>
         <section class="modal modal--response visually-hidden">
-          <div class="modal--response__textwrapper">
-            <h2 class="promo__header">Ваш отзыв отправлен!</h2>
-            <p class="promo__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          <div class="modal__textwrapper">
+            <h2 class="formpage__header">Ваш отзыв отправлен!</h2>
+            <p class="formpage__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
           </div>
-          <div class="modal--response__butground">
+          <div class="modal__butground">
             <button class="modal__button">Закрыть окно</button>
           </div>
         </section>

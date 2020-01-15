@@ -7,6 +7,23 @@
   background-color: @white;
 }
 
+.photopage__description {
+  display: block;
+  margin: 0 auto;
+  background-color: @white;
+}
+
+.photopage__header {
+  font-family: "PTSans-Bold", "Verdana", sans-serif;
+  color: @deepblack;
+  text-align: center;
+  margin: 0;
+}
+
+.photopage__text {
+  text-align: center;
+}
+
 .photopage__image {
   width: 100%;
 }
@@ -43,6 +60,25 @@
   .photopage {
     min-width: 320px;
     width: 100%;
+  }
+
+  .photopage__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 255px;
+    height: 149px;
+    margin: 0 auto;
+    padding-top: 43px;
+  }
+
+  .photopage__header {
+    font-size: 18px;
+  }
+
+  .photopage__header br,
+  .photopage__text br {
+    display: none;
   }
 
   .photopage img {
@@ -92,7 +128,7 @@
     margin-top: 11px;
   }
 
-  .photopage__icon--like {
+  .photopage__icon {
     opacity: 30%;
   }
 
@@ -102,6 +138,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    min-width: 320px;
     height: 356px;
     padding: 0;
     padding-top: 20px;
@@ -182,6 +219,27 @@
 }
 
 @media (min-width: @tablet-width) {
+  .photopage__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 490px;
+    height: 100px;
+    margin: 0 auto;
+    padding-top: 51px;
+    padding-bottom: 55px;
+  }
+
+  .photopage__header {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .photopage__header br,
+  .photopage__text br {
+    display: inline;
+  }
+
   .photopage__list {
     padding: 0;
     width: 768px;
@@ -239,16 +297,16 @@
     padding-top: 10px;
   }
 
-  .photopage .promo__header {
+  .photopage__header {
     font-size: 30px;
   }
 
-  .photopage .promo__text {
+  .photopage__text {
     width: 415px;
     margin: 0 auto;
   }
 
-  .photopage .promo__description {
+  .photopage__description {
     width: 768px;
   }
 
@@ -330,6 +388,27 @@
 }
 
 @media (min-width: @desktop-width) {
+  .photopage__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 490px;
+    height: 100px;
+    margin: 0 auto;
+    padding-top: 51px;
+    padding-bottom: 55px;
+  }
+
+  .photopage__header {
+    font-size: 21px;
+    margin: 0;
+  }
+
+  .photopage__header br,
+  .photopage__text br {
+    display: inline;
+  }
+
   .photopage__list {
     padding: 0;
     width: 1200px;
@@ -372,7 +451,7 @@
     color: @white;
   }
 
-  .photopage__icon--like {
+  .photopage__icon {
     opacity: 100%;
 
     path {
@@ -416,7 +495,7 @@
     padding-right: 21px;
   }
 
-  .photopage__icon--like polygon {
+  .photopage__icon polygon {
     fill: @white;
   }
 

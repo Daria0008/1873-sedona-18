@@ -100,7 +100,7 @@
         <h2 class="formpage__header">Оставьте свой отзыв</h2>
         <p class="formpage__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
-      <form class="form">
+      <form class="form" method="post" action="https://echo.htmlacademy.ru">
         <div class="form__section form__section--introduce">
           <h2 class="formpage__header">Представьтесь:</h2>
           <label for="firstname">Имя<sup>*</sup>:
@@ -116,7 +116,7 @@
         <div class="form__section form__section--contactInfo">
           <h2 class="formpage__header">Контактная информация:</h2>
           <label for="phone">Контактный телефон<sup>*</sup>:
-            <input class="form__contact" type="text" name="phone" id="phone" value="Введите телефон">
+            <input class="form__contact" type="text" name="phone" type="tel" id="phone" pattern="+7[0-9]{10}" value="Введите телефон" title="Телефон в формате +7 9** *** ** **">
             <svg class="form__icon" id="icon-phone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
               <g id="icon-phone-g">
                 <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
@@ -128,7 +128,7 @@
             </svg>
           </label>
           <label for="e-mail">Электронная почта<sup>*</sup>:
-            <input class="form__contact" type="text" name="e-mail" id="e-mail" value="Введите e-mail">
+            <input class="form__contact" type="text" name="e-mail" id="e-mail" type="email" value="Введите e-mail">
             <svg class="form__icon" version="1.1" id="icon-mail" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
               <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z" />
             </svg>

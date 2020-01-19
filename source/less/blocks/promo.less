@@ -62,7 +62,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 255px;
-    height: 149px;
+    height: 160px;
     margin: 0 auto;
     padding-top: 43px;
   }
@@ -75,6 +75,10 @@
     font-size: 18px;
   }
 
+  .promo__text {
+    line-height: 1.41;
+  }
+
   .promo__header br,
   .promo__itemheader br,
   .promo__text br {
@@ -85,16 +89,25 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 471px;
+    height: 451px;
     width: 100%;
     background-color: @blue;
     color: @white;
 
+    &:first-child {
+      height: 495px;
+    }
+
     .promo__itemheader {
+      padding-top: 17px;
       font-size: 18px;
       color: @white;
       text-align: center;
       margin: 0;
+    }
+
+    .promo__pic {
+      height: 260px;
     }
   }
 
@@ -109,15 +122,16 @@
     display: block;
     width: 265px;
     height: 105px;
+    padding-top: 21px;
     margin: 0 auto;
-    padding-top: 61px;
-    padding-bottom: 45px;
+
+    &:first-child {
+      padding-top: 61px;
+    }
   }
 
   .promo__cover:nth-child(2) {
     order: -1;
-    padding-top: 43px;
-    margin-bottom: 18px;
   }
 
   .promo__list--feature {
@@ -125,11 +139,11 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding-top: 51px;
+    justify-content: space-between;
+    padding-top: 20px;
     padding-bottom: 42px;
     width: 320px;
-    height: 416px;
+    height: 354px;
     background-color: @white;
   }
 
@@ -140,6 +154,18 @@
     position: relative;
     text-align: left;
     margin-left: 70px;
+    background-color: @white;
+
+
+    &:last-child h3 {
+      display: inline-block;
+      vertical-align: baseline;
+      margin: 0;
+    }
+
+    &:last-child .promo__icon {
+      top: -10px;
+    }
   }
 
   .promo__item--feature .promo__text {
@@ -148,8 +174,8 @@
 
   .promo__icon {
     position: absolute;
-    top: 10px;
-    left: -52px;
+    top: 7px;
+    left: -48px;
     fill: @blue;
   }
 
@@ -159,12 +185,34 @@
     width: 100%;
   }
 
+  .promo__list--other {
+    height: 503px;
+    width: 320px;
+  }
+
   .promo__otherfeatures {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 167px;
+    justify-content: space-between;
+    align-items: center;
+    height: 113px;
+    width: 246px;
+    padding: 27px 37px 27px 37px;
     border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+
+    .promo__itemheader {
+      display: inline-block;
+      vertical-align: baseline;
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .promo__text {
+      display: inline-block;
+      vertical-align: baseline;
+      margin: 0;
+      width: 246px;
+    }
   }
 
   .promo__otherfeatures .promo__itemheader {

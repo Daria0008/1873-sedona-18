@@ -14,7 +14,6 @@
   line-height: 1.71;
   color: @deepblack;
   margin: 0 auto;
-  padding-top: 23px;
 }
 
 .offer__text {
@@ -75,22 +74,28 @@
 
 @media (min-width: @tablet-width) {
   .offer {
-    height: 331px;
-    min-width: 768px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    height: 365px;
+    width: 768px;
   }
 
   .offer__header {
+    display: inline-block;
+    vertical-align: baseline;
     font-size: 30px;
     line-height: 0.87;
+    height: 30px;
+    width: 300px;
+    margin-top: 105px;
   }
 
   .offer p {
     width: 435px;
-    height: 20px;
+    height: 60px;
+    padding-top: 36px;
   }
 
   .offer br {
@@ -98,19 +103,20 @@
   }
 
   .offer__link {
-    padding-left: 124px;
-    padding-right: 124px;
+    padding-left: 136px;
+    padding-right: 136px;
+    margin-top: 40px;
+    margin-bottom: 65px;
   }
 }
 
-
 @media (min-width: @desktop-width) {
   .offer {
-    height: 331px;
+    height: 301px;
     min-width: 458px;
     width: 458px;
     margin: 0 auto;
-    padding: 57px 371px 66px 371px;
+    padding: 47px 371px 66px 371px;
   }
 
   .offer__header {

@@ -97,8 +97,8 @@
     <section class="formpage">
       <h1 class="visually-hidden">Ваши впечатления от Седоны</h1>
       <section class="formpage__description">
-        <h2 class="formpage__header">Оставьте свой отзыв</h2>
-        <p class="formpage__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <h2 class="formpage__header formpage__header--first">Оставьте свой отзыв</h2>
+        <p class="formpage__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
       <form class="form" method="post" action="https://echo.htmlacademy.ru">
         <div class="form__section form__section--introduce">
@@ -115,24 +115,22 @@
         </div>
         <div class="form__section form__section--contactInfo">
           <h2 class="formpage__header">Контактная информация:</h2>
-          <label for="phone">Контактный телефон<sup>*</sup>:
-            <input class="form__contact" type="text" name="phone" type="tel" id="phone" pattern="+7[0-9]{10}" value="Введите телефон" title="Телефон в формате +7 9** *** ** **">
-            <svg class="form__icon" id="icon-phone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
-              <g id="icon-phone-g">
-                <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
-                  <g transform="translate(85.000000, 126.000000)">
-                    <path id="icon-phone-Shape" fill="#010101" d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z" />
-                  </g>
+          <label for="phone">Контактный телефон<sup>*</sup>:</label>
+          <input class="form__contact" type="text" name="phone" type="tel" id="phone" pattern="+7[0-9]{10}" value="Введите телефон" title="Телефон в формате +7 9** *** ** **">
+          <svg class="form__icon form__icon--phone" id="icon-phone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
+            <g id="icon-phone-g">
+              <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
+                <g transform="translate(85.000000, 126.000000)">
+                  <path id="icon-phone-Shape" fill="#010101" d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z" />
                 </g>
               </g>
-            </svg>
-          </label>
-          <label for="e-mail">Электронная почта<sup>*</sup>:
-            <input class="form__contact" type="text" name="e-mail" id="e-mail" type="email" value="Введите e-mail">
-            <svg class="form__icon" version="1.1" id="icon-mail" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
-              <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z" />
-            </svg>
-          </label>
+            </g>
+          </svg>
+          <label for="e-mail">Электронная почта<sup>*</sup>:</label>
+          <input class="form__contact" type="text" name="e-mail" id="e-mail" type="email" value="Введите e-mail">
+          <svg class="form__icon form__icon--mail" version="1.1" id="icon-mail" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z" />
+          </svg>
         </div>
         <div class="form__section form__section--impressions">
           <h2 class="formpage__header">Ваше общее впечатление:</h2>

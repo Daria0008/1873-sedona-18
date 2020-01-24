@@ -326,6 +326,17 @@
     margin: 0 auto;
     padding-top: 51px;
     padding-bottom: 55px;
+
+    .formpage__text {
+      width: 439px;
+      height: 100px;
+      padding-top: 18px;
+    }
+
+    .formpage__header {
+      font-size: 31px;
+      padding-top: 18px;
+    }
   }
 
   .formpage__header {
@@ -367,15 +378,23 @@
   }
 
   .form__section--introduce {
-    width: 266px;
-    height: 294px;
+    justify-content: flex-start;
+    width: 324px;
+    height: 340px;
     order: -1;
-    padding-left: 58px;
+    padding-bottom: 0;
 
     input[type="text"] {
       margin-left: 15px;
       margin-top: 0;
       margin-bottom: 0;
+    }
+
+    .formpage__header {
+      margin-top: 24px;
+      margin-bottom: 36px;
+      margin-left: 58px;
+      text-align: left;
     }
 
     label {
@@ -384,7 +403,8 @@
       align-items: center;
       height: 58px;
       width: 266px;
-      margin-left: 0;
+      margin-left: 58px;
+      margin-top: 20px;
     }
   }
 

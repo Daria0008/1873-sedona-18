@@ -228,20 +228,22 @@
           </div>
         </li>
       </ul>
-      <section class="photopage__description">
-        <h2 class="photopage__header">Все еще сомневаетесь?</h2>
-        <p class="photopage__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      </section>
       <section class="photopage__video">
+        <section class="photopage__description">
+          <h2 class="photopage__header">Все еще сомневаетесь?</h2>
+          <p class="photopage__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </section>
         <h2 class="visually-hidden">Видеоролик с Седоной</h2>
-        <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="/img/video-desktop@1x.webp 1x, /img/video-desktop@2x.webp 2x">
-          <source media="(min-width: 1200px)" srcset="/img/video-desktop@1x.jpg 1x, /img/video-desktop@2x.jpg 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="/img/video-tablet@1x.webp 1x, /img/video-tablet@2x.webp 2x">
-          <source media="(min-width: 768px)" srcset="/img/video-tablet@1x.jpg 1x, /img/video-tablet@2x.jpg 2x">
-          <source type="image/webp" media="(min-width: 320px)" srcset="/img/video-mobile@1x.webp 1x, /img/video-mobile@2x.webp 2x">
-          <img class="photopage__image" src="/img/video-mobile@1x.jpg" srcset="/img/video-mobile@2x.jpg 2x" alt="Видеоролик с Седоной">
-        </picture>
+        <div class="photopage__videowrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="/img/video-desktop@1x.webp 1x, /img/video-desktop@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="/img/video-desktop@1x.jpg 1x, /img/video-desktop@2x.jpg 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="/img/video-tablet@1x.webp 1x, /img/video-tablet@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="/img/video-tablet@1x.jpg 1x, /img/video-tablet@2x.jpg 2x">
+            <source type="image/webp" media="(min-width: 320px)" srcset="/img/video-mobile@1x.webp 1x, /img/video-mobile@2x.webp 2x">
+            <img class="photopage__image" src="/img/video-mobile@1x.jpg" srcset="/img/video-mobile@2x.jpg 2x" alt="Видеоролик с Седоной">
+          </picture>
+        </div>
         <div class="photopage__controls">
           <div class="photopage__timeline">
             <div class="photopage__line">
